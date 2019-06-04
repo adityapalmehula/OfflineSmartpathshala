@@ -1,0 +1,48 @@
+<div class="fixed-header">
+	<div class="container-fluid cont-css">
+		<div class="row">
+			<div class="col-md-2 col-modufy pl-0  pr-0">
+				<a href="#"><img class="logo img-fluid" [attr.srcset]="logo" [attr.src]="logo"></a>
+			</div>
+			<div class="col-md-10">
+				<nav class="link-top pt-3">
+					<div class="row">
+						<div class="col-10">
+						</div>
+						<div class="col-2 text-right">
+							<button type="button" class="btn btn-info st-md"  [routerLink]="['/']">Back</button>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+	<div class="whiteboard-css">
+  <canvas-whiteboard #canvasWhiteboard
+                     [options]="canvasOptions"
+                     (onBatchUpdate)="onCanvasDraw($event)"
+                     (onClear)="onCanvasClear()"
+                     (onUndo)="onCanvasUndo($event)"
+                     (onRedo)="onCanvasRedo($event)">
+  </canvas-whiteboard>
+</div>
+
+<!-- <canvas-whiteboard #canvasWhiteboard
+                       [drawButtonClass]="'drawButtonClass'"
+                       [drawButtonText]="'Draw'"
+                       [clearButtonClass]="'clearButtonClass'"
+                       [clearButtonText]="'Clear'"
+                       [undoButtonText]="'Undo'"
+                       [undoButtonEnabled]="true"
+                       [redoButtonText]="'Redo'"
+                       [redoButtonEnabled]="true"
+                       [colorPickerEnabled]="true"
+                       (onBatchUpdate)="sendBatchUpdate($event)"
+                       (onClear)="onCanvasClear()"
+                       (onUndo)="onCanvasUndo($event)"
+                       (onRedo)="onCanvasRedo($event)">                    
+</canvas-whiteboard> -->
+<!-- <i [drawButtonClass]="'fa fa-pencil fa-2x'" [clearButtonClass]="'fa fa-eraser fa-2x canvas_whiteboard_button-clear'"></i> -->
+</div>

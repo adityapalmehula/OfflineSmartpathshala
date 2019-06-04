@@ -1,0 +1,240 @@
+[{
+	"topicname":"Resources",
+	"id":"1",
+	"subtopics":[{
+		"subtopicname":"Types Of Resources And Conserving Resources",
+		"id":"1",
+		"videos":[{
+			"videoname":"Conservation of minerals",
+			"videoUrl":"Conservation of minerals.mp4"
+		}
+	]
+	}
+]
+},
+{
+	"topicname":"Land, Soil, Water, Natural Vegetation And Wildlife Resources",
+	"id":"2",
+	"subtopics":[{
+		"subtopicname":"Types Of Resources And Conserving Resources",
+		"id":"1",
+		"videos":[{
+			"videoname":"Conventional and Non-Conventional",
+			"videoUrl":"Energy Resources - Conventional and Non-Conventional.mp4"
+		}
+	]
+	},
+	{
+		"subtopicname":"Soil, Factors Of Soil Formation, Degradation Of Soil And Conservation Measures",
+		"id":"2",
+		"videos":[{
+			"videoname":"Land, Soil, Water, Natural Vegetation And Wildlife Resources Soil",
+			"videoUrl":"MINERAL AND POWER RESOURCES class-8.mp4"
+		}
+	]
+	},
+	{
+		"subtopicname":"Water, Problems Of Water Availability",
+		"id":"3",
+		"videos":[{
+			"videoname":"Water",
+			"videoUrl":"Water"
+		}
+	]
+	},
+	{
+		"subtopicname":"Natural Vegetation And Wildlife",
+		"id":"4",
+		"videos":[{
+			"videoname":"Wildlife|Land, Soil, Water, Natural Vegetation And Wild Life Resources",
+			"videoUrl":"Wildlife|Land, Soil, Water, Natural Vegetation And Wild Life Resources"
+		}
+	]
+	},
+	{
+		"subtopicname":"Distribution Of Natural Vegetation",
+		"id":"5",
+		"videos":[{
+			"videoname":"Distribution Of Natural Vegetation",
+			"videoUrl":"Distribution Of Natural Vegetation"
+		}
+	]
+	},
+	{
+		"subtopicname":"Conservation Of Natural Vegetation And Wildlife",
+		"id":"6",
+		"videos":[{
+			"videoname":"Conservation Of Natural Vegetation And Wildlife",
+			"videoUrl":"Conservation Of Natural Vegetation And Wildlife"
+		}
+	]
+	}
+]
+},
+
+{
+  "topicname":"Mineral And Power Resources",
+  "id":"3",
+  "subtopics":[{
+    "subtopicname":"Types Of Minerals, Distribution Of Minerals, Distribution In India, Uses Of Minerals",
+    "id":"1",
+    "videos":[{
+			"videoname":"Mineral And Power Resources Class-8",
+			"videoUrl":"Mineral And Power Resources Class-8"
+		}
+	]
+  },
+  {
+    "subtopicname":"Conservation Of Minerals",
+    "id":"2",
+      "videos":[{
+			"videoname":"Conservation Of Minerals",
+			"videoUrl":"Conservation Of Minerals"
+		}
+	]
+  },
+  {
+    "subtopicname":"Power Resources And Non-Conventional Sources Of Energy",
+    "id":"3",
+     "videos":[{
+			"videoname":"Energy Resources - Conventional And Non-Conventional",
+			"videoUrl":"Energy Resources - Conventional And Non-Conventional"
+		}
+	]
+  },
+  {
+    "subtopicname":"Recommended Videos",
+    "id":"4",
+     "videos":[{
+			"videoname":"Metals: Ferrous And Non-Ferrous",
+			"videoUrl":"Metals: Ferrous And Non-Ferrous"
+		}
+	]
+ }
+]
+},
+{
+  "topicname":"Agriculture",
+  "id":"4",
+  "subtopics":[{
+    "subtopicname":"Farm System",
+    "id":"1",
+     "videos":[{
+			"videoname":"Farm System|Agriculture",
+			"videoUrl":"Farm System|Agriculture"
+		}
+	]
+  },
+  {
+    "subtopicname":"Types Of Farming",
+    "id":"2",
+     "videos":[{
+			"videoname":"Types Of Farming | Cbse Class 10 | Geography",
+			"videoUrl":"Types Of Farming | Cbse Class 10 | Geography"
+		}
+	]
+  },
+  {
+    "subtopicname":"Agricultural Development",
+    "id":"3",
+    "videos":[{
+			"videoname":"Agricultural Development- A Case Study Class-8",
+			"videoUrl":"Agricultural Development- A Case Study Class-8"
+		}
+	]
+  },
+  {
+    "subtopicname":"Recommended Videos",
+    "id":"4",
+    "videos":[{
+			"videoname":"Food Crops Of India - Geography For Kids | Kids Education By Mocomi",
+			"videoUrl":"Food Crops Of India - Geography For Kids | Kids Education By Mocomi"
+		}
+	]
+}
+]
+},
+{
+  "topicname":"Industries",
+  "id":"5",
+  "subtopics":[{
+    "subtopicname":"Classification Of Industries",
+    "id":"1",
+    "videos":[{
+			"videoname":"Industries Class-8",
+			"videoUrl":"Industries Class-8"
+		}
+	]
+  },
+  {
+    "subtopicname":"Factors Affecting Location Of Industries",
+    "id":"2",
+    "videos":[{
+			"videoname":"Factors Affecting The Location Of Industries Class-8",
+			"videoUrl":"Factors Affecting The Location Of Industries Class-8"
+		}
+	]
+  },
+  {
+    "subtopicname":"Industrial System",
+    "id":"3",
+    "videos":[{
+			"videoname":"Industrial System|Industries|Cbse Class 8 Social Science",
+			"videoUrl":"Industrial System|Industries|Cbse Class 8 Social Science"
+		}
+	]
+  },
+  {
+    "subtopicname":"Industrial Regions, Distribution Of Major Industries, Cotton Textile Industry",
+    "id":"4",
+     "videos":[{
+			"videoname":"Industrial Regions|Industries|Cbse Class 8 Social Science",
+			"videoUrl":"Industrial Regions|Industries|Cbse Class 8 Social Science"
+		}
+	]
+  },
+  {
+    "subtopicname":"Information Technology",
+    "id":"5",
+     "videos":[{
+			"videoname":"Information Technology (It)|Industries|Cbse Class 8 Social Science",
+			"videoUrl":"Information Technology (It)|Industries|Cbse Class 8 Social Science"
+		}
+	]
+  }
+]
+},
+{
+  "topicname":"Human Resources",
+  "id":"6",
+  "subtopics":[{
+    "subtopicname":"Distribution Of Population, Density Of Population",
+    "id":"1",
+     "videos":[{
+			"videoname":"Distribution Of Population|Human Industries|Cbse Class 8 Social Science",
+			"videoUrl":"Distribution Of Population|Human Industries|Cbse Class 8 Social Science"
+		}
+	]
+  },
+  {
+    "subtopicname":"Factors Affecting Distribution Of Population, Population Change, Patterns Of Population Change",
+    "id":"2",
+     "videos":[{
+			"videoname":"Factors Influencing Distribution Of Population Class-8",
+			"videoUrl":"Factors Influencing Distribution Of Population Class-8"
+		}
+	]
+  },
+  {
+    "subtopicname":"Population Composition",
+    "id":"3",
+     "videos":[{
+			"videoname":"Population Composition|Human Industries|Cbse Class 8 Social Science",
+			"videoUrl":"Population Composition|Human Industries|Cbse Class 8 Social Science"
+		}
+	]
+  }
+]
+}
+]
+

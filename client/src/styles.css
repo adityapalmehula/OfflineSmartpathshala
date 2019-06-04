@@ -1,0 +1,168 @@
+@import '~font-awesome/css/font-awesome.css';
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial !important;
+  min-height: 600px;
+  background-color: #f5f5f5 !important;
+  overflow-y: hidden;
+}
+
+
+.alert-info{
+	margin-top: 10px;
+	color: #e9ecef;
+	background-color: #3b5998cf;
+	border-color: #3b5998cf;
+}
+
+
+.alert-add{
+	font-size: 14px !important;
+	border-radius: 6px;
+	background:#004085;
+	color:#fff;
+	border:none;
+	position:relative;
+	font-size:1em;
+	padding-left: 0.7em !important;
+	padding-right: 0.7em !important;
+	padding: 0.2em;
+	cursor:pointer;
+	transition:800ms ease all;
+	outline:none;
+}
+.alert-add:hover{
+	background:#fff;
+	color: #3b5998;
+}
+.alert-add:before,.alert-add:after{
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	height:2px;
+	width:0;
+	background: #3b5998;
+	transition:400ms ease all;
+}
+.alert-add:after{
+	right:inherit;
+	top:inherit;
+	left:0;
+	bottom:0;
+}
+.alert-add:hover:before,.alert-add:hover:after{
+	width:100%;
+	transition:800ms ease all;
+}
+.legend-css{
+	font-weight: 600;
+	font-size: 1.2vw;
+	color: #525c65
+}
+.form_required {
+	color: red;
+	font-weight: 400;
+}
+.form-label {
+	color: #666;
+	font-weight: 500;
+	letter-spacing: .7px;
+	display: inline-block;
+}
+
+/*Start css for buttons*/
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-save {
+	margin-left: 5px;
+  color: #FFFFFF;
+  background-color: #4f6f8f !important;
+  border: #4f6f8f !important;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background-color: #34717f !important;
+  border: #34717f !important;
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.btn-update {
+  color: #FFFFFF;
+  background-color: #4f6f8f !important;
+  border: #4f6f8f !important;
+  cursor: pointer;
+}
+
+.btn-update:hover {
+  background-color: #34717f !important;
+  border: #34717f !important;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  color: #FFFFFF;
+  background-color: #ef8b80 !important;
+  border: #ef8b80 !important;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background-color: #e5676d !important;
+  border: #e5676d !important;
+  cursor: pointer;
+}
+
+
+
+/*End css for buttons*/
+
+  .error-msg {
+    font-size: 13px;
+    line-height: 17px;
+    color: #dd3737;
+    font-weight: normal;
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+  }
+
+  .error {
+    font-size: 13px;
+    font-family: Roboto, Helvetica;
+    line-height: 17px;
+    color: #dd3737;
+    font-weight: normal;
+    display: block;
+    position: relative;
+    float: left;
+    padding-bottom: 5px;
+  }
+
+  .errorMessage {
+    font-family: Roboto, Helvetica;
+    font-size: 13px;
+    line-height: 13px;
+    color: #da1f1a9c;
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .table td{
+  	padding: 0.6rem !important;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

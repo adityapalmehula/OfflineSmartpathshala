@@ -1,0 +1,223 @@
+<div class="fixed-header">
+	<div class="container-fluid cont-css">
+		<div class="row">
+			<div class="col-md-2 col-modufy pl-0  pr-0">
+				<a href="#"><img class="logo img-fluid" [attr.srcset]="logo" [attr.src]="logo"></a>
+			</div>
+			<div class="col-md-10">
+				<nav class="link-top pt-3">
+					<div class="row">
+						<div class="col-1 text-right header-items pr-0 mt-1">
+							Classes
+						</div>
+						<div class="col-2 pr-0">
+							<div class="dropdown">
+								<button class="btn btn-info dropdown-toggle css-ts" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									{{className}}
+								</button>
+								<div class="dropdown-menu drop-down" aria-labelledby="dropdownMenuButton">
+									<a *ngFor="let classObj of classArray" (click)="getClassesName(classObj)" class="dropdown-item">{{classObj.classname}}</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-1 text-right header-items pr-0 mt-1 mr-2">
+							Courses
+						</div>
+						<div class="col-3">
+							<div class="dropdown">
+								<button class="btn btn-info dropdown-toggle css-ts" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									{{coursesName}}
+								</button>
+								<div class="dropdown-menu drop-down" aria-labelledby="dropdownMenuButton">
+									<a *ngFor="let courseObj of courseArray" (click)="getCoursesName(courseObj)" class="dropdown-item">{{courseObj.coursename}}</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-2">
+							<button type="button" class="btn btn-info st-md"  [routerLink]="['/','whiteBoard']">Whiteboard</button>
+						</div>
+						<div class="col-2">
+							<button type="button" class="btn btn-info st-md" (click)="encryption()">Encryption</button>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-3 pl-0 pr-0 overflow-auto no-float" id="yellow">
+			<div class="col-12 col-css pt-4 pb-4 ml-0 text-center">
+				{{coursesName}}
+			</div>
+			<div class="col-12 pt-2 pb-4 pl-0 hight-fix">
+
+				<ol class="list-group">
+					<div class="">
+						<li class="list-group-item list-data pr-0 justify-content-between topic-lis`ip] list-darous" (click)="assignSubtopic(syllabus)" [class.error-border]="syllabus.isInvalid" *ngFor="let syllabus of syllabusArray; let i=index ">
+							<div class="d-flex w-100 justify-content-between" data-toggle="collapse" [attr.data-target]='"#syllabus-"+i' aria-expanded="true">
+								<div class="row topic-title pl-0 pr-0" (click)="rotate('syllabus'+i)">
+									<div class="col-10 text-left pl-3 pr-0 subtopic-containt">
+										<span class="topicHeading" title={{syllabus.topicname}} [class.error-warning]="syllabus.isInvalid">{{syllabus?.topicname | slice:0:32}}<span *ngIf="syllabus?.topicname?.length>32">...</span>
+									</span>
+									<!-- <span class="subtopic-length pL10">{{topic.subtopics?.length}} Subtopics</span> -->
+								</div>
+								<div class="col-2 pl-0 text-right">
+									<span class="btn btn-secondary btn-down pt-0 pb-0 pr-1 pl-1 btn-css" title="Details">
+										<i id="syllabus{{i}}"  class="fa fa-arrow-down rotate-down"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="w-100 collapse pL20 subTopic-details" [attr.id]='"syllabus-"+i'>
+							<div class="accordion">
+								<div class="card card-subtopic" *ngFor="let subTopic of syllabus?.subtopics; let j=index">
+									<div class="card-header pl-0 pt-0 pb-0">
+										<h5 class="mb-0">
+											<button class="btn btn-link pl-1 pr-0 btn-subtopic" type="button" (click)="assSubtopic(subTopic)" data-toggle="collapse" [attr.data-target]='"#subTopic-"+i+j' aria-expanded="false" aria-controls="collapseOne">
+												{{subTopic?.subtopicname | slice:0:30}}
+											</button>
+										</h5>
+									</div>
+									<div [attr.id]='"subTopic-"+i+j'class="collapse" aria-labelledby="headingOne">
+										<div class="card-body card-tscss">
+											<div class="list-group">
+												<a  class="list-group-item list-group-item-action pl-1 pr-1 pb-0 pt-0 a-css" *ngFor="let videoObj of subTopic?.videos; let k=index" (click)="videosObjectGet(videoObj)">{{videoObj.videoname}}</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</div>
+			</ol>
+		</div>
+	</div>
+
+	<div class="col-9">
+		<div class="row d-flex justify-content-center">
+			<div class="col-md-12 col-sm-12 header-tcss">
+				<p class="text-center mb-0 pb-0">{{topicName}}</p>
+				<p *ngIf="subtopicNameGet" class="text-center mb-0">{{subtopicNameGet}}</p>
+			</div>
+
+			<div class="col-md-11 col-sm-11"  *ngIf="currentVideo"> 
+				<!-- class="vg-css" -->
+				<vg-player>
+					<!-- for buffering system -->
+					<vg-buffering></vg-buffering>
+
+					<vg-controls>
+						<!-- play-pause option 1 -->
+						<vg-play-pause></vg-play-pause>
+						<!-- Play fast slow options -->
+						<vg-playback-button></vg-playback-button>
+            <!-- current video play time -->
+						<vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+						
+						<vg-scrub-bar>
+							<vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+							<vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+						</vg-scrub-bar>
+
+						 <!-- total video time  -->
+						<vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+
+						<vg-mute></vg-mute>
+						<vg-volume></vg-volume>
+
+
+						<vg-fullscreen></vg-fullscreen>
+
+					</vg-controls>
+
+
+					<video #videoRef [vgMedia]="videoRef" id="myVideo" preload="auto"  crossorigin autoplay loop muted>
+						<source *ngIf="currentVideo" bind-src="currentVideo" type="video/mp4" >
+						</video>
+					</vg-player>
+				</div>
+
+				
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container-fluid">
+	<div class="row">
+
+		<div class="col-4 css-add">
+			XXXX
+		</div>
+
+		<div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8">
+			<vg-player>
+				<video [vgMedia]="media" #media id="singleVideo" preload="auto" controls class="video-css" autoplay loop muted>
+					<source *ngIf="currentVideo" bind-src="currentVideo" type="video/mp4" >
+					</video>
+				</vg-player>
+			</div>
+		</div>
+	</div> -->
+
+<!-- <div class="container-fluid pr-0 pl-0">
+	<div class="row">
+		 	<div class="col-4 col-md-4 col-sm-4">
+		 		<h1>hello1</h1>
+		 	</div>
+		 	<div class="col-8 col-md-8 col-sm-8">
+		 			<h1>hello2</h1>
+		 	</div>
+	</div>
+	
+
+
+</div> -->
+
+
+	<!-- <div class="card text-center w-100">
+		<div class="card-body">
+			<div class="row row-css">
+				<div class="col-4 pt-4 ">
+					<div class="list-group" id="list-tab" role="tablist">
+						<a *ngFor="let videoObj of videoArry" class="list-group-item list-group-item-action active css-ts" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" (click)="dateFilter(videoObj.videoName)">{{videoObj.name}}</a>
+					</div>
+				</div>
+				<div class="col-8 pt-4 pb-4">
+					<div class="tab-content tab-css" id="nav-tabContent">
+						<vg-player>
+							<video [vgMedia]="media" #media id="singleVideo" preload="auto" controls class="video-css" autoplay loop muted>
+								<source *ngIf="currentVideo" bind-src="currentVideo" type="video/mp4" >
+								</video>
+							</vg-player>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+

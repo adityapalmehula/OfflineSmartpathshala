@@ -1,0 +1,28 @@
+[
+{
+  "classname":"class9",
+  "coursename":"class9-Math",
+  "id":"1"
+},
+{
+  "classname":"class9",
+  "coursename":"class9-Science",
+  "id":"2"
+},
+{
+  "classname":"class9",
+  "coursename":"class9-History",
+  "id":"3"
+},
+{
+  "classname":"class9",
+  "coursename":"class9-Geography",
+  "id":"4"
+},
+{
+  "classname":"class9",
+  "coursename":"class9-Civics",
+  "id":"5"
+
+}
+]

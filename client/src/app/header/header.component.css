@@ -1,0 +1,49 @@
+.fixed-header{      
+	background-color: #256289;
+  border-bottom: 1px solid #256289;
+	/*padding: 10px 0;*/
+	color: #fff;
+	height: 60px;
+}
+.fixed-header{
+	top: 0;
+}
+.fixed-footer{
+	bottom: 0;
+}  
+.link-css{
+	color: white;
+	font-weight: 600;
+}
+.link-top{
+	padding-top: 7px;
+}
+.col-modufy{
+	background-color: white;
+	max-width: 200px;
+}
+.profile-css{
+	background-color: #3b5998;
+}
+.show > .customButton:focus{
+  background-color: #3b5998 !important;
+  box-shadow:none !important;
+  border: none !important;
+
+}
+.customButton{
+  box-shadow:none !important;
+  border: none !important;
+}
+.usr-css{
+	font-size: 15px;
+	color: blue;
+}
+.pro-css{
+	font-weight: 400;
+}
+.profileImage {
+  	width: 30px;
+  	height: 30px;
+  	border-radius: 50%;
+  }

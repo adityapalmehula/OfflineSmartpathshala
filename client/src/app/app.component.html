@@ -1,0 +1,41 @@
+<div class="container-fluid pl-0 pr-0">  
+		<ngx-loading [show]="isLoading"></ngx-loading>
+	<!-- <app-header></app-header> -->
+	<div class="body-section mb-3">
+		 <router-outlet></router-outlet>
+	<!-- 	<app-play-video></app-play-video> -->
+	</div>
+	<app-footer></app-footer>
+</div>
+
+
+<!-- <div class="container-fluid pr-0 pl-0">
+	<div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+	<div class="card text-center w-100">
+		<div class="card-header header-css">
+			Smartpathshala   working
+		</div>
+		<div class="card-body">
+			<div class="row pt-4 row-css">
+				<div class="col-4 pt-4 ">
+					<div class="list-group" id="list-tab" role="tablist">
+						<a *ngFor="let videoObj of videoArry" class="list-group-item list-group-item-action active css-ts" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" (click)="dateFilter(videoObj.videoName)">{{videoObj.name}}</a>
+					</div>
+				</div>
+				<div class="col-8 pt-4 pb-4">
+					<div class="tab-content tab-css" id="nav-tabContent">
+						<vg-player>
+							<video [vgMedia]="media" #media id="singleVideo" preload="auto" controls class="video-css" autoplay loop muted>
+								<source *ngIf="currentVideo" bind-src="currentVideo" type="video/mp4" >
+								</video>
+							</vg-player>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer text-muted header-css">
+				Knight learning solutions
+			</div>
+		</div>
+	</div>
+	</div> -->

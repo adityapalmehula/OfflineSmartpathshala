@@ -1,0 +1,26 @@
+.footer {
+	text-align: center;
+	font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+	color: white !important;
+	background-color: #256289 !important;
+	background: white;
+	min-height: 45px;
+	height: auto;
+	line-height: 45px;
+	display: block;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	margin: 0;
+	font-size: 12px;
+	position: fixed;
+}
+.a-css{
+	color: #3b5998;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}

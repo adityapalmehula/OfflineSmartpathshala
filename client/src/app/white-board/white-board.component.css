@@ -1,0 +1,100 @@
+.video-css{	
+	height: 455px;
+  width: 100%;
+}
+.header-css{
+	background-color: #3fa5b7;
+	color: white;
+	font-weight: bold;
+	text-align: justify;
+}
+.css-ts{
+	color: #fff;
+	background-color: #00BCD4;
+	border-color: #19bcd4;
+	width: 100%;
+}
+.drop-down{
+	width: 100%;
+}
+.fixed-header{      
+	background-color: #256289;
+	border-bottom: 1px solid #256289;
+	/*padding: 10px 0;*/
+	color: #fff;
+}
+.fixed-header{
+	top: 0;
+}
+.fixed-footer{
+	bottom: 0;
+}  
+.link-css{
+	color: white;
+	font-weight: 600;
+}
+.link-top{
+	padding-top: 7px;
+}
+.col-modufy{
+	background-color: white;
+	max-width: 200px;
+}
+.profile-css{
+	background-color: #3b5998;
+}
+.show > .customButton:focus{
+	background-color: #3b5998 !important;
+	box-shadow:none !important;
+	border: none !important;
+
+}
+.customButton{
+	box-shadow:none !important;
+	border: none !important;
+}
+.usr-css{
+	font-size: 15px;
+	color: blue;
+}
+.pro-css{
+	font-weight: 400;
+}
+.profileImage {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.header-items{
+	font-weight: 600;
+}
+.cont-css{
+	background-color: #266288;
+}
+.css-add{
+	background-color: blue;
+}   
+
+#yellow {
+	height: 100%; 
+	background: #607D8B;
+	/*position: absolute; */
+	padding-bottom: 100%;
+    margin-bottom: -100%;
+	left: 0px;}
+	/*.container-fluid {
+		position: static !important;
+	}*/
+	.col-css{
+		background-color: #19bcd4;
+		color: white;
+		font-size: 120%;
+		font-weight: bold;
+	}
+.canvas_whiteboard_button-draw:before {
+  content: "Draw";
+}
+.whiteboard-css{	
+height: 95vh; 
+border: 1px solid black
+}

@@ -1,0 +1,32 @@
+[
+{
+  "classname":"class8",
+  "coursename":"Math",
+  "id":"1",
+  "syllabus":"class8Geograpgy.json"
+},
+{
+  "classname":"class8",
+  "coursename":"Science",
+  "id":"2",
+  "syllabus":"class8Science.json"
+},
+{
+  "classname":"class8",
+  "coursename":"History",
+  "id":"3",
+  "syllabus":"class8History.json"
+},
+{
+  "classname":"class8",
+  "coursename":"Geography",
+  "id":"4",
+  "syllabus":"class8Geography.json"
+},
+{
+  "classname":"class8",
+  "coursename":"Civics",
+  "id":"5",
+  "syllabus":"class8Civics.json"
+}
+]

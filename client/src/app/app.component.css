@@ -1,0 +1,19 @@
+.tab-css{
+	height: 400px;
+}
+.row-css{
+	background-color: #117a8b;
+}
+.video-css{	
+	height: 400px;
+}
+.header-css{
+	background-color: #07444e;
+	color:white;
+}
+.css-ts{
+	background-color: #061b31;
+}
+footer{
+	max-height: 40px !important;
+}
